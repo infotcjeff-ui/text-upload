@@ -3,89 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Dark Mode Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dark Mode Website</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <h1>Dark Mode</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-icon">🌙</span>
-            </button>
-        </div>
-    </nav>
-
-    <div class="container">
-        <main>
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="hero-content">
-                    <h2 class="hero-title">Welcome to Dark Mode</h2>
-                    <p class="hero-subtitle">Experience intelligent theme switching with automatic system detection and persistent user preferences.</p>
-                </div>
-            </section>
-
-            <!-- Features Grid -->
-            <section class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🌓</div>
-                    <h3>Auto Detection</h3>
-                    <p>Automatically detects your operating system preference using the prefers-color-scheme media query and applies the appropriate theme on initial load.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">💾</div>
-                    <h3>Persistent Storage</h3>
-                    <p>Your manual selection is saved in localStorage to ensure your preference persists across page reloads, overriding the system default if set.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>CSS Variables</h3>
-                    <p>Uses CSS custom properties (variables) to manage colors, making theme switching smooth and efficient.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">♿</div>
-                    <h3>Accessibility</h3>
-                    <p>Meets WCAG accessibility standards with a contrast ratio of at least 4.5:1 for normal text, ensuring excellent readability.</p>
-                </div>
-            </section>
-
-            <!-- Content Sections -->
-            <section class="content-section">
-                <h2>Features</h2>
-                <p>The theme toggle button in the header allows you to switch between light and dark modes. Your preference is automatically saved and will persist when you reload the page.</p>
-                <p>This website features an intelligent dark mode system that:</p>
-                <ul>
-                    <li>Automatically detects your operating system preference</li>
-                    <li>Allows manual theme switching with the toggle button</li>
-                    <li>Remembers your preference across page reloads</li>
-                    <li>Uses CSS custom properties for easy theme management</li>
-                    <li>Meets WCAG accessibility standards for contrast</li>
-                </ul>
-            </section>
-            
-            <section class="content-section">
-                <h2>Accessibility</h2>
-                <p>This implementation ensures proper contrast ratios for readability. The dark mode uses a dark gray background (#181818) with white text (#FFFFFF) to provide excellent contrast and reduce eye strain in low-light conditions.</p>
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2024 Dark Mode Website. All rights reserved.</p>
-        </footer>
-    </div>
-    
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
-
