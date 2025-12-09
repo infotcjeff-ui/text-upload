@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dark Mode Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Dark Mode</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <!-- Page Header -->
+            <section class="page-header">
+                <h2>Get In Touch</h2>
+                <p class="page-subtitle">Have questions or feedback? We'd love to hear from you!</p>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="content-section">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="content-section">
+                <h3>Other Ways to Reach Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@darkmodewebsite.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <h4>Website</h4>
+                            <p>www.darkmodewebsite.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Content -->
+            <section class="content-section">
+                <h3>Features</h3>
+                <p>The theme toggle button in the header allows you to switch between light and dark modes. Your preference is automatically saved and will persist when you reload the page.</p>
+                <p>This website features an intelligent dark mode system that:</p>
+                <ul>
+                    <li>Automatically detects your operating system preference</li>
+                    <li>Allows manual theme switching with the toggle button</li>
+                    <li>Remembers your preference across page reloads</li>
+                    <li>Uses CSS custom properties for easy theme management</li>
+                    <li>Meets WCAG accessibility standards for contrast</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>Accessibility</h3>
+                <p>This implementation ensures proper contrast ratios for readability. The dark mode uses a dark gray background (#181818) with white text (#FFFFFF) to provide excellent contrast and reduce eye strain in low-light conditions.</p>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Dark Mode Website. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
